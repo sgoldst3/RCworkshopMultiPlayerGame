@@ -75,7 +75,7 @@ function checkWin(board){
   return undefined
 
 };
-     
+
 
 function drawBoard(brd){
   var gBoard = document.getElementById("gameboard");
@@ -96,8 +96,8 @@ function drawBoard(brd){
 };
 
 
-function makeMove(event){
-  clickToBoard(event.target.id);
+function makeMove(id){
+  clickToBoard(id);
   checkWin(tttBoard);
 }
 
@@ -129,13 +129,13 @@ function refreshBoard(bSize){
 
 var createGame = function() {
   var size = 3
-  
- var refreshButton = document.getElementById('refresh');
- refreshButton.addEventListener('click', refreshBoard);
-  
-  
+
+ // var refreshButton = document.getElementById('refresh');
+ // refreshButton.addEventListener('click', refreshBoard);
+
+
   refreshBoard(size);
-  
+
 };
 
-window.addEventListener('load', createGame);
+// window.addEventListener('load', createGame);
